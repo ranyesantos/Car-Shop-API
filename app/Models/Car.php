@@ -13,7 +13,6 @@ class Car extends Model
         'brand',
         'model',
         'value',
-        'sales',
         'license',
         'color'
     ];
