@@ -12,8 +12,7 @@
 2. **PHP** Versão: >= 8.0
 3. **Laravel** Versão: >=10
 4. **Git**
-5. **Node.js**
-6. **Banco de dados MySQL**
+6. **Banco de dados MongoDB**
 
 ## Como rodar
 1. **Clonar o Repositório do GitHub e Selecionar Diretório**
