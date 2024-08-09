@@ -6,6 +6,81 @@
 **Descrição**: Esta API tem o intuito de representar um catálogo de venda de carros 
 
 
+## Pré-requisitos
+
+1. **Composer**
+2. **PHP** Versão: >= 8.0
+3. **Laravel** Versão: >=10
+4. **Git**
+5. **Node.js**
+6. **Banco de dados MySQL**
+
+## Como rodar
+1. **Clonar o Repositório do GitHub e Selecionar Diretório**
+   
+   Abra o terminal e execute:
+
+    ```sh
+    git clone https://github.com/ranyesantos/Car-Shop-API.git
+    ```
+
+    Após clonar, para selecionar o diretório do projeto, execute:
+    ```sh
+    cd Car-Shop-Api
+    ```
+
+2. **Instalar Dependências do PHP**
+
+    No diretório do projeto, execute:
+    ```sh
+    composer install
+    ```
+    
+3. **Configurar Variáveis de Ambiente**
+
+    Copie o arquivo `.env.example` para `.env` com o comando:
+    ```sh
+    cp .env.example .env
+    ```
+
+    Edite o arquivo .env com suas configurações de banco de dados e outras variáveis de ambiente necessárias. Por exemplo:
+    ```sh
+    DB_CONNECTION=mongodb
+    DB_HOST=127.0.0.1
+    DB_PORT=27017
+    DB_DATABASE=carshop
+    DB_USERNAME=seu_usuario
+    DB_PASSWORD=sua_senha
+    ```
+
+
+4. **Gerar a Chave da Aplicação**
+
+    Execute o comando para gerar a chave da aplicação:
+    ```sh
+    php artisan key:generate
+    ```
+
+5. **Execute Migrations e Seeders**
+
+    Execute as migrations para criar as tabelas no banco de dados
+    ```sh
+    php artisan migrate
+    ```
+
+    Após executar as migrations, popule o banco de dados com o comando:
+    ```sh
+    php artisan db:seed
+    ```
+
+6. **Iniciar o Servidor de Desenvolvimento**
+
+    Para iniciar o servidor embutido do Laravel, execute o comando:
+    ```sh
+    php artisan serve
+    ```
+
+
 
 
 ## Funcionalidades:
@@ -34,6 +109,7 @@
 
 ### Ordenação
 1. **Ordenar Carros por Preço**
+2. **Ordenar Carros por Data de Adição**
 
 ## Estrutura de dados
 ### Car
